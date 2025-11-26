@@ -1,4 +1,4 @@
-##Node1
+Follow steps: Master Node/ Workernode1/ Workernode2
 Kubernetes Installation Steps: 
 Step1: Install Containers 
 (Run on both Master and Worker Nodes) 
@@ -45,6 +45,7 @@ EOF
 
 17.sudo systemctl enable containerd 
 
+Follow steps: Master Node/ Workernode1/ Workernode2
 Step2: Install Kubectl, kubeadm,kubelet 
 (Run on both  Master and Worker Nodes) 
 Run in Root Account
@@ -67,7 +68,7 @@ echo 'deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.
 
 8.sudo systemctl enable --now kubelet 
 
-
+>>>>>>>>>>>>>>>>>>>>>>>>>>>
 Step3: Only on Master Node 
 
 1.kubeadm init --pod-network-cidr=10.244.0.0/16
