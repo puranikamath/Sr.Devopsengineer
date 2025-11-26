@@ -75,6 +75,9 @@ After Kube init you will get kubeadm join command, copy it and save - this is un
 kubeadm join 172.31.12.83:6443 --token c4p4o9.wka20bm8zobf0cti \
         --discovery-token-ca-cert-hash sha256:146841827f6abc8f428b6d9e814ef517315b88403e81c1f293e322cf8bfabd34
 
+<<<<<<mine servr adm join>>>>> kubeadm join 172.31.44.134:6443 --token wwssa4.hzxv8e5yt8rri4up \
+        --discovery-token-ca-cert-hash sha256:8a443a367c4322a4560a4d1ff9f697406ad1bff6f7d428fce1a1350bedc805e1 
+
 2.mkdir -p $HOME/.kube 
 
 3.sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config 
@@ -85,6 +88,8 @@ kubeadm join 172.31.12.83:6443 --token c4p4o9.wka20bm8zobf0cti \
 
 6. kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml 
 Enable PORTs in All EC2 instances - all traffic both inbound and outbound
+
+NOTE:
 
 Step4: You can now join any number of machines by running the following on each node as root: 
 Only on Worker Nodes:
