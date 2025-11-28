@@ -1,0 +1,10 @@
+apiVersion: V1
+kind: jenkins
+metadata: 
+  Name: jenkins
+  label: my-jenkins
+Spec: 
+  containers:
+    -Name: jenkins
+     image: jenkins/jenkinslatest
+     
